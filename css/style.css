@@ -1,0 +1,387 @@
+
+:root {
+    --gray-1: #F8C519;
+    --gray-2: #000000;
+    --gray-3: #ffffff;
+    --white: #000000;
+    --black: #0000001b;
+
+    --gradient-black-gray: linear-gradient(135deg, #F8C519, #ffffff);
+    --gradient-gray-black: linear-gradient(135deg, #F8C519, #ffffff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  color: var(--gray-2);
+    background-color: var(--black);
+}
+/* Reset */
+body {
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+
+  background-color:white;
+  color: #000000;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.section-title {
+  color: #000000;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.word {
+    font-size: 48px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+span {
+    color: #F8C519;
+}
+
+/* Projects Container */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+
+/* Project Card */
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(32, 32, 32, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* Project Image */
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Project Content */
+.project-content {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #F8C519;
+}
+
+.project-content h2 {
+   font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 0 10px;
+}
+
+.project-content p {
+  color: #a2a2a2;
+  margin: 0 0 15px;
+}
+
+.project-link {
+  text-decoration: none;
+
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.3s ease;
+}
+
+
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 120px;
+    background-image: var(--gradient-black-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    display: block;
+    padding: 20px 5px;
+    text-align: center;
+    transition: all .3s;
+    font-size: 14px;
+}
+
+nav a:hover {
+    background-color: var(--black);
+}
+
+nav a i {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+main {
+    margin-left: 120px;
+    padding: 0 30px;
+}
+
+main section {
+    margin: 40px 0;
+}
+
+main section h2 {
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: var(--white);
+}
+
+main section h3 {
+    font-weight: normal;
+    font-size: 22px;
+    margin-top: 34px;
+    margin-bottom: 15px;
+    color: var(--white);
+}
+
+main section hr {
+    max-width: 180px;
+    border: none;
+    height: 5px;
+    background-color: var(--gradient-gray-black-default);
+    background-image: var(--gradient-gray-black);
+    margin-bottom: 15px;
+}
+
+main #home {
+    text-align: center;
+}
+
+main #home h1 {
+    color: var(--white);
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+main #home p {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+main #home img {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 5px;
+}
+
+main #about p {
+    line-height: 28px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+main #about ul {
+    list-style-position: inside;
+    margin-bottom: 20px;
+}
+
+main #about ul li {
+    line-height: 32px;
+}
+
+main #workout p {
+    line-height: 28px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+main #workout .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main #workout .grid .card {
+    box-shadow: 2px 2px 5px var(--gray-3);
+    border-radius: 5px;
+    background-image: var(--gradient-black-gray);
+}
+
+main #workout .grid .card h4 {
+    color: var(--gray-1);
+    border-bottom: 2px solid var(--gray-3);
+    padding: 20px 15px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+main #workout .grid .card ol {
+    list-style-position: inside;
+    padding: 15px 10px;
+}
+
+main #workout .grid .card ol li {
+    line-height: 32px;
+}
+
+main #movies p {
+    line-height: 28px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+main #movies .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+main #movies .grid img {
+    width: 100%;
+}
+
+main #movies .grid div:nth-child(1) {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+
+main #contact p {
+    margin-top: 20px;
+}
+
+main #contact .follow-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main #contact p i {
+    font-size: 22px;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: var(--gray-1);
+}
+
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+}
+
+.search-button {
+    margin-bottom: 40px;
+    background-color: #F8C519; /* لون الزر */
+    color: #fdfdfd;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 0 25px 25px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #030302; /* لون عند التمرير */
+}
+
+.search-button:active {
+    transform: scale(0.95); /* تأثير الضغط */
+}
+
+main #contact .follow-links a {
+    display: block;
+    color: var(--white);
+    background-image: var(--gradient-black-gray);
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 5px;
+    transition: all .3s;
+    font-size: 20px;
+}
+
+main #contact .follow-links a:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width:960px) {
+    main #workout .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main #movies .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main #movies .grid div:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+}
+
+@media (max-width:640px) {
+
+    nav {
+        height: auto;
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 0 20px;
+        margin-top: 130px;
+    }
+
+    main #workout .grid {
+        grid-template-columns: 1fr;
+    }
+
+    main #movies .grid {
+        grid-template-columns: 1fr;
+    }
+}
